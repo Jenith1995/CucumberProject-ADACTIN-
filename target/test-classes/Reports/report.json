@@ -1,0 +1,200 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 19,
+        "name": "Verifying the adactin login details with invalid credentials",
+        "description": "",
+        "id": "verifying-adactin-details;verifying-the-adactin-login-details-with-invalid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13500462900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the Adactin page",
+            "match": {
+              "location": "LoginPageSteps.adactinPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9324665900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I should login using \"JenithJohn\" and \"Jeni2847\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"JenithJohn\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"Jeni2847\"",
+                  "offset": 38
+                }
+              ],
+              "location": "LoginPageSteps.i_should_login_using_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3731931900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should search the hotel using \"Sydney\",\"Hotel Sunshine\",\"Deluxe\",\"1 - One\",\"19/10/2020\",\"20/10/2020\",\"2 - Two\",\"1 - One\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sydney\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"Hotel Sunshine\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"Deluxe\"",
+                  "offset": 58
+                },
+                {
+                  "val": "\"1 - One\"",
+                  "offset": 67
+                },
+                {
+                  "val": "\"19/10/2020\"",
+                  "offset": 77
+                },
+                {
+                  "val": "\"20/10/2020\"",
+                  "offset": 90
+                },
+                {
+                  "val": "\"2 - Two\"",
+                  "offset": 103
+                },
+                {
+                  "val": "\"1 - One\"",
+                  "offset": 113
+                }
+              ],
+              "location": "LoginPageSteps.i_should_search_the_hotel_using(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1776577300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should select the hotel",
+            "match": {
+              "location": "LoginPageSteps.selectTheHotel()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2076511500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should book the hotel using  \"Kumar\",\"K\",\"Australia\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Kumar\"",
+                  "offset": 31
+                },
+                {
+                  "val": "\"K\"",
+                  "offset": 39
+                },
+                {
+                  "val": "\"Australia\"",
+                  "offset": 43
+                }
+              ],
+              "location": "LoginPageSteps.i_should_book_the_hotel_using(String,String,String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ccNo",
+                  "ccType",
+                  "expMonth",
+                  "expYear",
+                  "cvvNumber"
+                ]
+              },
+              {
+                "cells": [
+                  "98766543211265347",
+                  "American Express",
+                  "March",
+                  "2022",
+                  "453"
+                ]
+              },
+              {
+                "cells": [
+                  "93456543211256435",
+                  "VISA",
+                  "February",
+                  "2020",
+                  "123"
+                ]
+              },
+              {
+                "cells": [
+                  "98666543211262578",
+                  "Master Card",
+                  "September",
+                  "2022",
+                  "167"
+                ]
+              },
+              {
+                "cells": [
+                  "92366543211290876",
+                  "Other",
+                  "July",
+                  "2021",
+                  "675"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8301075800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I should get the order number",
+            "match": {
+              "location": "LoginPageSteps.i_should_get_the_order_number()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Verifying Adactin details",
+    "description": "",
+    "id": "verifying-adactin-details",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feature/LoginPage.feature",
+    "tags": []
+  }
+]

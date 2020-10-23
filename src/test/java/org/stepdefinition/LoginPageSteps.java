@@ -1,18 +1,10 @@
 package org.stepdefinition;
 
-import java.time.zone.ZoneOffsetTransitionRule.TimeDefinition;
-import java.util.concurrent.TimeUnit;
-
 import org.baseclass.BaseClass;
-import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
-import org.pojo.LoginPage;
 import org.pojo.BookHotelPage;
 import org.pojo.BookingConfirmPage;
+import org.pojo.LoginPage;
 import org.pojo.SearchHotelPage;
 import org.pojo.SelectHotel;
 
@@ -62,10 +54,11 @@ public class LoginPageSteps extends BaseClass {
 	    sp.selectHotel();
 	}
 
-	@When("I should book the hotel using  {string},{string},{string},{string},{string},{string},{string},{string}")
-	public void i_should_book_the_hotel_using(String firstName, String lastName, String address, String cardNum, String ccType, String expMonth, String expYear, String cvvNum) {
-	    b= new BookHotelPage();
-	    b.bookHotel(firstName, lastName, address, cardNum, ccType, expMonth, expYear, cvvNum);
+	@When("I should book the hotel using  {string},{string},{string}")
+	public void i_should_book_the_hotel_using(String firstName, String lastName, String address, io.cucumber.datatable.DataTable dataTable) {
+	    b = new BookHotelPage();
+	   b.bookHotel(firstName, lastName, address, dataTable);
+	    
 	}
 
 	@When("I should get the order number")
