@@ -7,6 +7,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -32,6 +34,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class BaseClass {
@@ -39,6 +43,28 @@ public class BaseClass {
 	protected static WebDriver driver;
 	public Actions a;
     public Select s;
+    
+      public static final String AUTOMATE_USERNAME = "jenithj1";
+	  public static final String AUTOMATE_ACCESS_KEY = "8VKdhedPU8qV3wxTr4vs";
+	  public static final String URL = "https://" + AUTOMATE_USERNAME + ":" + AUTOMATE_ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub";		
+		
+    
+    
+    
+    public void browserLaunch() throws MalformedURLException {
+		
+    	DesiredCapabilities caps = new DesiredCapabilities();
+	    caps.setCapability("os_version", "10");
+	    caps.setCapability("resolution", "1920x1080");
+	    caps.setCapability("browser", "Chrome");
+	    caps.setCapability("browser_version", "85.0");
+	    caps.setCapability("os", "Windows");
+	    caps.setCapability("name", "BrowserstackAutomation"); // test name
+	    caps.setCapability("build", "BStack Build Number 1"); // CI/CD job or build name
+	    driver = new RemoteWebDriver(new URL(URL), caps);
+
+	  
+	}
 	
 
 	// to launch the Chrome Browser
@@ -427,11 +453,11 @@ public class BaseClass {
 
 	// to get the particular cell value using rnum and cnum
 
-	public String readValueInExcel(String name , String sheet , int rownum, int columnnum) throws IOException {
+	public String readValueInExcel(File file , String sheet , int rownum, int columnnum) throws IOException {
 		
-		File f = new File("C:\\Users\\Admin\\eclipse-workspace\\MavenTopic\\Excel\\"+ name +".xlsx");
+	//	File f = new File(System.getProperty("user.id")+"\\Excel\\"+ name +".xlsx");
 		
-		FileInputStream fin = new FileInputStream(f);
+		FileInputStream fin = new FileInputStream(file);
 		
 		Workbook w = new XSSFWorkbook(fin);
 		
