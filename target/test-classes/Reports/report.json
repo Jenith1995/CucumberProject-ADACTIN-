@@ -1,21 +1,43 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
+        "before": [
+          {
+            "result": {
+              "duration": 1451500,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
         "line": 19,
         "name": "Verifying the adactin login details with invalid credentials",
         "description": "",
         "id": "verifying-adactin-details;verifying-the-adactin-login-details-with-invalid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 5801,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.afterScenarion(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 13500462900,
-              "status": "passed"
+              "duration": 65300,
+              "status": "skipped"
             },
-            "line": 4,
+            "line": 5,
             "name": "I am on the Adactin page",
             "match": {
               "location": "LoginPageSteps.adactinPage()"
@@ -24,20 +46,20 @@
           },
           {
             "result": {
-              "duration": 9324665900,
-              "status": "passed"
+              "duration": 8501,
+              "status": "skipped"
             },
-            "line": 5,
-            "name": "I should login using \"JenithJohn\" and \"Jeni2847\"",
+            "line": 6,
+            "name": "I should login using \"GokulNathan\" and \"gokulfaraday@16\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"JenithJohn\"",
+                  "val": "\"GokulNathan\"",
                   "offset": 21
                 },
                 {
-                  "val": "\"Jeni2847\"",
-                  "offset": 38
+                  "val": "\"gokulfaraday@16\"",
+                  "offset": 39
                 }
               ],
               "location": "LoginPageSteps.i_should_login_using_and(String,String)"
@@ -46,11 +68,11 @@
           },
           {
             "result": {
-              "duration": 3731931900,
-              "status": "passed"
+              "duration": 7001,
+              "status": "skipped"
             },
-            "line": 6,
-            "name": "I should search the hotel using \"Sydney\",\"Hotel Sunshine\",\"Deluxe\",\"1 - One\",\"19/10/2020\",\"20/10/2020\",\"2 - Two\",\"1 - One\"",
+            "line": 7,
+            "name": "I should search the hotel using \"Sydney\",\"Hotel Sunshine\",\"Deluxe\",\"1 - One\",\"19/10/2020\",\"20/10/2020\",\"1 - One\",\"0 - None\"",
             "match": {
               "arguments": [
                 {
@@ -78,11 +100,11 @@
                   "offset": 90
                 },
                 {
-                  "val": "\"2 - Two\"",
+                  "val": "\"1 - One\"",
                   "offset": 103
                 },
                 {
-                  "val": "\"1 - One\"",
+                  "val": "\"0 - None\"",
                   "offset": 113
                 }
               ],
@@ -92,10 +114,10 @@
           },
           {
             "result": {
-              "duration": 1776577300,
-              "status": "passed"
+              "duration": 6899,
+              "status": "skipped"
             },
-            "line": 7,
+            "line": 8,
             "name": "I should select the hotel",
             "match": {
               "location": "LoginPageSteps.selectTheHotel()"
@@ -104,10 +126,10 @@
           },
           {
             "result": {
-              "duration": 2076511500,
-              "status": "passed"
+              "duration": 6901,
+              "status": "skipped"
             },
-            "line": 8,
+            "line": 9,
             "name": "I should book the hotel using  \"Kumar\",\"K\",\"Australia\"",
             "match": {
               "arguments": [
@@ -177,8 +199,8 @@
           },
           {
             "result": {
-              "duration": 8301075800,
-              "status": "passed"
+              "duration": 6499,
+              "status": "skipped"
             },
             "line": 15,
             "name": "I should get the order number",
@@ -187,6 +209,882 @@
             },
             "keyword": "And "
           }
+        ],
+        "tags": [
+          {
+            "name": "@Feature5"
+          },
+          {
+            "name": "@ChildrenRoom"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9701,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Verifying the adactin login details with invalid credentials",
+        "description": "",
+        "id": "verifying-adactin-details;verifying-the-adactin-login-details-with-invalid-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 6200,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.afterScenarion(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9099,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I am on the Adactin page",
+            "match": {
+              "location": "LoginPageSteps.adactinPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7701,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I should login using \"GokulNathan\" and \"gokulfaraday@16\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GokulNathan\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"gokulfaraday@16\"",
+                  "offset": 39
+                }
+              ],
+              "location": "LoginPageSteps.i_should_login_using_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7199,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "I should search the hotel using \"Melbourne\",\"Hotel Creek\",\"Standard\",\"2 - Two\",\"19/10/2020\",\"20/10/2020\",\"2 - Two\",\"1 - One\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Melbourne\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"Hotel Creek\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"Standard\"",
+                  "offset": 58
+                },
+                {
+                  "val": "\"2 - Two\"",
+                  "offset": 69
+                },
+                {
+                  "val": "\"19/10/2020\"",
+                  "offset": 79
+                },
+                {
+                  "val": "\"20/10/2020\"",
+                  "offset": 92
+                },
+                {
+                  "val": "\"2 - Two\"",
+                  "offset": 105
+                },
+                {
+                  "val": "\"1 - One\"",
+                  "offset": 115
+                }
+              ],
+              "location": "LoginPageSteps.i_should_search_the_hotel_using(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7700,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I should select the hotel",
+            "match": {
+              "location": "LoginPageSteps.selectTheHotel()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7500,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I should book the hotel using  \"Kali\",\"R\",\"Japan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Kali\"",
+                  "offset": 31
+                },
+                {
+                  "val": "\"R\"",
+                  "offset": 38
+                },
+                {
+                  "val": "\"Japan\"",
+                  "offset": 42
+                }
+              ],
+              "location": "LoginPageSteps.i_should_book_the_hotel_using(String,String,String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ccNo",
+                  "ccType",
+                  "expMonth",
+                  "expYear",
+                  "cvvNumber"
+                ]
+              },
+              {
+                "cells": [
+                  "98766543211265347",
+                  "American Express",
+                  "March",
+                  "2022",
+                  "453"
+                ]
+              },
+              {
+                "cells": [
+                  "93456543211256435",
+                  "VISA",
+                  "February",
+                  "2020",
+                  "123"
+                ]
+              },
+              {
+                "cells": [
+                  "98666543211262578",
+                  "Master Card",
+                  "September",
+                  "2022",
+                  "167"
+                ]
+              },
+              {
+                "cells": [
+                  "92366543211290876",
+                  "Other",
+                  "July",
+                  "2021",
+                  "675"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7399,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I should get the order number",
+            "match": {
+              "location": "LoginPageSteps.i_should_get_the_order_number()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature5"
+          },
+          {
+            "name": "@ChildrenRoom"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 10699,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Verifying the adactin login details with invalid credentials",
+        "description": "",
+        "id": "verifying-adactin-details;verifying-the-adactin-login-details-with-invalid-credentials;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 7299,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.afterScenarion(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9801,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I am on the Adactin page",
+            "match": {
+              "location": "LoginPageSteps.adactinPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8100,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I should login using \"GokulNathan\" and \"gokulfaraday@16\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GokulNathan\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"gokulfaraday@16\"",
+                  "offset": 39
+                }
+              ],
+              "location": "LoginPageSteps.i_should_login_using_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7100,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "I should search the hotel using \"Brisbane\",\"Hotel Hervey\",\"Double\",\"3 - Three\",\"19/10/2020\",\"20/10/2020\",\"3 - Three\",\"2 - Two\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Brisbane\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"Hotel Hervey\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"Double\"",
+                  "offset": 58
+                },
+                {
+                  "val": "\"3 - Three\"",
+                  "offset": 67
+                },
+                {
+                  "val": "\"19/10/2020\"",
+                  "offset": 79
+                },
+                {
+                  "val": "\"20/10/2020\"",
+                  "offset": 92
+                },
+                {
+                  "val": "\"3 - Three\"",
+                  "offset": 105
+                },
+                {
+                  "val": "\"2 - Two\"",
+                  "offset": 117
+                }
+              ],
+              "location": "LoginPageSteps.i_should_search_the_hotel_using(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7899,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I should select the hotel",
+            "match": {
+              "location": "LoginPageSteps.selectTheHotel()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6801,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I should book the hotel using  \"Mani\",\"G\",\"China\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mani\"",
+                  "offset": 31
+                },
+                {
+                  "val": "\"G\"",
+                  "offset": 38
+                },
+                {
+                  "val": "\"China\"",
+                  "offset": 42
+                }
+              ],
+              "location": "LoginPageSteps.i_should_book_the_hotel_using(String,String,String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ccNo",
+                  "ccType",
+                  "expMonth",
+                  "expYear",
+                  "cvvNumber"
+                ]
+              },
+              {
+                "cells": [
+                  "98766543211265347",
+                  "American Express",
+                  "March",
+                  "2022",
+                  "453"
+                ]
+              },
+              {
+                "cells": [
+                  "93456543211256435",
+                  "VISA",
+                  "February",
+                  "2020",
+                  "123"
+                ]
+              },
+              {
+                "cells": [
+                  "98666543211262578",
+                  "Master Card",
+                  "September",
+                  "2022",
+                  "167"
+                ]
+              },
+              {
+                "cells": [
+                  "92366543211290876",
+                  "Other",
+                  "July",
+                  "2021",
+                  "675"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13301,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I should get the order number",
+            "match": {
+              "location": "LoginPageSteps.i_should_get_the_order_number()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature5"
+          },
+          {
+            "name": "@ChildrenRoom"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 10399,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Verifying the adactin login details with invalid credentials",
+        "description": "",
+        "id": "verifying-adactin-details;verifying-the-adactin-login-details-with-invalid-credentials;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 9501,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.afterScenarion(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9101,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I am on the Adactin page",
+            "match": {
+              "location": "LoginPageSteps.adactinPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7499,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I should login using \"GokulNathan\" and \"gokulfaraday@16\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GokulNathan\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"gokulfaraday@16\"",
+                  "offset": 39
+                }
+              ],
+              "location": "LoginPageSteps.i_should_login_using_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7600,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "I should search the hotel using \"London\",\"Hotel Cornice\",\"Super Deluxe\",\"4 - Four\",\"19/10/2020\",\"20/10/2020\",\"4 - Four\",\"3 - Three\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"London\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"Hotel Cornice\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"Super Deluxe\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"4 - Four\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"19/10/2020\"",
+                  "offset": 83
+                },
+                {
+                  "val": "\"20/10/2020\"",
+                  "offset": 96
+                },
+                {
+                  "val": "\"4 - Four\"",
+                  "offset": 109
+                },
+                {
+                  "val": "\"3 - Three\"",
+                  "offset": 120
+                }
+              ],
+              "location": "LoginPageSteps.i_should_search_the_hotel_using(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 848899,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I should select the hotel",
+            "match": {
+              "location": "LoginPageSteps.selectTheHotel()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15900,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I should book the hotel using  \"Mani\",\"G\",\"China\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mani\"",
+                  "offset": 31
+                },
+                {
+                  "val": "\"G\"",
+                  "offset": 38
+                },
+                {
+                  "val": "\"China\"",
+                  "offset": 42
+                }
+              ],
+              "location": "LoginPageSteps.i_should_book_the_hotel_using(String,String,String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ccNo",
+                  "ccType",
+                  "expMonth",
+                  "expYear",
+                  "cvvNumber"
+                ]
+              },
+              {
+                "cells": [
+                  "98766543211265347",
+                  "American Express",
+                  "March",
+                  "2022",
+                  "453"
+                ]
+              },
+              {
+                "cells": [
+                  "93456543211256435",
+                  "VISA",
+                  "February",
+                  "2020",
+                  "123"
+                ]
+              },
+              {
+                "cells": [
+                  "98666543211262578",
+                  "Master Card",
+                  "September",
+                  "2022",
+                  "167"
+                ]
+              },
+              {
+                "cells": [
+                  "92366543211290876",
+                  "Other",
+                  "July",
+                  "2021",
+                  "675"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I should get the order number",
+            "match": {
+              "location": "LoginPageSteps.i_should_get_the_order_number()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature5"
+          },
+          {
+            "name": "@ChildrenRoom"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 20400,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Verifying the adactin login details with invalid credentials",
+        "description": "",
+        "id": "verifying-adactin-details;verifying-the-adactin-login-details-with-invalid-credentials;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 11701,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.afterScenarion(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10700,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I am on the Adactin page",
+            "match": {
+              "location": "LoginPageSteps.adactinPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8400,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I should login using \"GokulNathan\" and \"gokulfaraday@16\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GokulNathan\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"gokulfaraday@16\"",
+                  "offset": 39
+                }
+              ],
+              "location": "LoginPageSteps.i_should_login_using_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6701,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "I should search the hotel using \"London\",\"Hotel Cornice\",\"Super Deluxe\",\"4 - Four\",\"19/10/2020\",\"20/10/2020\",\"4 - Four\",\"4 - Four\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"London\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"Hotel Cornice\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"Super Deluxe\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"4 - Four\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"19/10/2020\"",
+                  "offset": 83
+                },
+                {
+                  "val": "\"20/10/2020\"",
+                  "offset": 96
+                },
+                {
+                  "val": "\"4 - Four\"",
+                  "offset": 109
+                },
+                {
+                  "val": "\"4 - Four\"",
+                  "offset": 120
+                }
+              ],
+              "location": "LoginPageSteps.i_should_search_the_hotel_using(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6700,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I should select the hotel",
+            "match": {
+              "location": "LoginPageSteps.selectTheHotel()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6399,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I should book the hotel using  \"Mani\",\"G\",\"China\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mani\"",
+                  "offset": 31
+                },
+                {
+                  "val": "\"G\"",
+                  "offset": 38
+                },
+                {
+                  "val": "\"China\"",
+                  "offset": 42
+                }
+              ],
+              "location": "LoginPageSteps.i_should_book_the_hotel_using(String,String,String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ccNo",
+                  "ccType",
+                  "expMonth",
+                  "expYear",
+                  "cvvNumber"
+                ]
+              },
+              {
+                "cells": [
+                  "98766543211265347",
+                  "American Express",
+                  "March",
+                  "2022",
+                  "453"
+                ]
+              },
+              {
+                "cells": [
+                  "93456543211256435",
+                  "VISA",
+                  "February",
+                  "2020",
+                  "123"
+                ]
+              },
+              {
+                "cells": [
+                  "98666543211262578",
+                  "Master Card",
+                  "September",
+                  "2022",
+                  "167"
+                ]
+              },
+              {
+                "cells": [
+                  "92366543211290876",
+                  "Other",
+                  "July",
+                  "2021",
+                  "675"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6300,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I should get the order number",
+            "match": {
+              "location": "LoginPageSteps.i_should_get_the_order_number()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature5"
+          },
+          {
+            "name": "@ChildrenRoom"
+          }
         ]
       }
     ],
@@ -194,7 +1092,16 @@
     "description": "",
     "id": "verifying-adactin-details",
     "keyword": "Feature",
-    "uri": "src/test/resources/Feature/LoginPage.feature",
-    "tags": []
+    "uri": "src/test/resources/Feature/ChildrensRoom.feature",
+    "tags": [
+      {
+        "name": "@Feature5",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

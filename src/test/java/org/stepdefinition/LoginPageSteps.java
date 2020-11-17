@@ -1,6 +1,9 @@
 package org.stepdefinition;
 
+import java.net.MalformedURLException;
+
 import org.baseclass.BaseClass;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.pojo.BookHotelPage;
 import org.pojo.BookingConfirmPage;
@@ -23,12 +26,12 @@ public class LoginPageSteps extends BaseClass {
 	BookingConfirmPage bc;
 	
 	@Given("I am on the Adactin page")
-	public void adactinPage() {
+	public void adactinPage() throws MalformedURLException {
 		
-	   chromeLaunch();
-	   
-	   urlLaunch("http://adactinhotelapp.com/");
-	    
+	//   chromeLaunch();
+	   browserLaunch();
+	  urlLaunch("http://adactinhotelapp.com/");
+	  // driver.get("http://adactinhotelapp.com/"); 
 	}
 	
 	@When("I should login using {string} and {string}")
@@ -63,10 +66,11 @@ public class LoginPageSteps extends BaseClass {
 
 	@When("I should get the order number")
 	public void i_should_get_the_order_number() {
-		bc = new BookingConfirmPage();
+		bc = new BookingConfirmPage();		
 		String value = attributeValue(bc.getTxtOrdernum(), "value");
 		System.out.println(value);
-		quit();
+	
+		//quit();
 
 	}
 
